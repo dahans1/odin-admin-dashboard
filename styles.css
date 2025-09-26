@@ -1,5 +1,5 @@
 * {
-    border: 1px solid blue;
+    border: 1px solid burlywood;
 }
 
 body {
@@ -8,8 +8,13 @@ body {
 }
 
 nav {
+    background-color: skyblue;
+
     grid-column: 1;
     grid-row: 1 / 3;
+
+    display: grid;
+    gap: 15px;
 }
 
 header {
@@ -18,4 +23,35 @@ header {
 
 main {
     grid-column: 2 / span 3;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.sidebar-actions-main, .siderbar-actions-configure {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sidebar-link {
+    display: flex;
+    gap: 5px;
+
+    font-size: 1rem;
+    color: white;
+}
+
+.sidebar-link svg {
+    color: white;
+    width: 1rem;
+}
+
+#logo {
+    align-items: center;
+}
+
+#logo svg {
+    width: 1.5rem;
 }
